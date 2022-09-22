@@ -16,7 +16,7 @@
       </thead>
       <tbody>
         <% @line_items.each do |item| %>
-          <%= render 'line_item', item: item.product, product: Product.find(item.product_id)%>
+          <%= render 'line_item', item: item.product, quantity: item[:quantity].to_i%>
         <% end %>
       </tbody>
       <tfoot>
