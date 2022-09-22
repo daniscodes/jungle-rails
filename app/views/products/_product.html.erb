@@ -11,5 +11,12 @@
     method: :post do %>
       <%= fa_icon "shopping-cart", text: 'Add' %> 
     <% end %>
+
+    <% if product.quantity < 1 %>
+    <article class="soldout">
+    SOLD OUT!
+    </article>
+    <% end %>
+
   </div>
 </article>
