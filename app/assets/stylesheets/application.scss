@@ -111,3 +111,13 @@ form.button_to {
 .text-danger {
   color: #f38792 !important;
 }
+
+.user_auth a {
+  color: #43aa8b;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.user_auth a:hover {
+  color: #f9c74f;
+}
