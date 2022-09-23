@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
 
   root to: 'products#index'
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 6c9d0f76c298993918a5d539297973678cfb06fc
   resources :about, only: [:index]
   resources :products, only: [:index, :show]
   resources :categories, only: [:show]
