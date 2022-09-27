@@ -4,22 +4,23 @@
 
 <%= form_for :user, url: '/users' do |f| %>
   <div class="container">
-  <div class="row g-3">
+  <div class="row g-1">
   <div class="col-sm">
   First Name: <%= f.text_field :first_name, :placeholder => "First Name"%>
 </div>
 <div class="col-sm">
-  Lase Name: <%= f.text_field :last_name, :placeholder => "Last Name"%>
+  Last Name: <%= f.text_field :last_name, :placeholder => "Last Name"%>
 </div>
 
-<div class="col-sm">
-  Password: <%= f.password_field :password, :placeholder => "Password" %>
-</div>
-</div>
-
-<div class="row g-3">
 <div class="col-sm">
  Email: <%= f.text_field :email, :placeholder => "Email"%>
+</div>
+
+</div>
+
+<div class="row g-2">
+<div class="col-sm">
+  Password: <%= f.password_field :password, :placeholder => "Password" %>
 </div>
 
 <div class="col-sm">
