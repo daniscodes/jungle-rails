@@ -8,11 +8,15 @@ RSpec.describe Product, type: :model do
       @product.save
       expect(@product.id).to be_present
     end
-    it "throws an error with no price" do
-      @category = Category.new(name: "myCategoryName")
-      @product = Product.new(name: "myProductName", price: nil, quantity: "5", category: @category)
-      @product.save
-      expect(@product.errors.full_messages).to include("Price can't be blank")
+    it 'is not able to save when price property is not included' do
+      @category = Category.new
+      @product = Product.new({
+        name: 'Test_product',
+        quantity: 3,
+        category: @category
+      })
+      expect(@product).to_not be_valid
+      expect(@product.errors.messages).to eq({:price=>["is not a number", "can't be blank"], :price_cents=>["is not a number"]})
     end
     it "validate quantity" do
       @category = Category.new(name: "myCategoryName")
