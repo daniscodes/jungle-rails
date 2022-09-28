@@ -27,4 +27,4 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 !["Product Display"](https://github.com/daniscodes/jungle-rails/blob/master/screenshots/Products.png)
 !["Cart Dislpay"](https://github.com/daniscodes/jungle-rails/blob/master/screenshots/Cart.png)
 !["Admin adds new category"](https://github.com/daniscodes/jungle-rails/blob/master/screenshots/AdminCategory.png)
-!["Admin adds new product"](https://github.com/daniscodes/jungle-rails/blob/master/screenshots/AdminProduct.pngg)
+!["Admin adds new product"](https://github.com/daniscodes/jungle-rails/blob/master/screenshots/AdminProduct.png)
