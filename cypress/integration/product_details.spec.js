@@ -4,7 +4,7 @@ describe("Jungle", () => {
   });
 
   it("users can navigate from the home page to the product detail page by clicking on a product", () => {
-    cy.contains("Looking for a way to add some life to your home?");
+    cy.contains("Where you can find any plants!");
 
     cy.get("a[href='/products/1']").click();
 
